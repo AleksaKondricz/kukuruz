@@ -1,0 +1,24 @@
+import { ArgsTable, Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Button, ButtonProps } from '../src/Button';
+
+<Meta title="Components/Button" component={Button} />
+
+export const Template = args => <Button {...args} />;
+
+# Button
+
+Let's define a story for our `Button` component:
+
+<Story name="My button" args={{children: 'I am in MDX'}}>
+    {Template.bind({})}
+</Story>
+
+<ArgsTable story="My button"/>
+
+Extra text description here.
+
+<Canvas>
+    <Story name="Secondary button" args={{children: 'MDX secondary', variant='secondary'}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
