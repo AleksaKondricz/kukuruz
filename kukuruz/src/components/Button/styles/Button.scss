@@ -1,4 +1,5 @@
-@import './styles/theme/theme.scss';
+
+@import '../../../styles/theme/theme.scss';
 
 /* base styling for our button */
 .btn {
@@ -6,10 +7,19 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    letter-spacing: 1.25;
+    display: inline-block;
+    &:hover{
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
   }
   
   /* styling for our variants */
-  .btn-primary {
+  .btn-filled {
     border: none;
     background-color: $indian-red;
     color: white;
@@ -17,13 +27,12 @@
       background-color: $english-vermillion;
     }
   }
-  .btn-secondary {
+  .btn-outline {
     background-color: $white;
     border: 1px solid $indian-red;
     color: $indian-red;
     &:hover {
-      color: $white;
-      background-color: $indian-red;
+      background-color: $pastel-pink-4;
     }
   }
   
@@ -34,7 +43,14 @@
       background-color: $pastel-pink-4;
     }
   }
-
+  
+  .btn-gradient{
+    background-image: linear-gradient(to right, $english-vermillion, $indian-red  , $pastel-pink );
+    background-size: 120% 100%;
+    &:hover{
+      background-position: 600% 0;
+    }
+  }
   .btn-danger {
     border: none;
     background-color: #f18701;
@@ -49,23 +65,23 @@
   }
   
   /* styling for different shape*/
+
+
   .btn-sm{
-    padding: calc(0.375rem - 3px) 60px calc(0.375rem - 3px) 12px;
+    padding: 0.875rem calc(0.875rem * 1.33) ;
     min-height: 2rem;
     font-size: .875rem;
-    max-width: 20rem;
+    min-width: 4rem;
   }
-
   .btn-md{
-    padding: calc(0.675rem - 3px) 60px calc(0.675rem - 3px) 12px;
+    padding: 1rem calc(1rem * 1.33);
     min-height: 2rem;
-    font-size: .875rem;
-    max-width: 20rem;
+    font-size: 1rem;
+    min-width: 4rem;
   }
-
   .btn-lg{
     min-height: 3rem;
-    padding: calc(0.875rem - 3px) 63px calc(0.875rem - 3px) 15px;
-    font-size: .875rem;
-    max-width: 20rem;
+    padding: 1.125rem calc(1.125rem * 1.33);
+    font-size: 1.125rem;
+    min-width: 4rem;
   }
