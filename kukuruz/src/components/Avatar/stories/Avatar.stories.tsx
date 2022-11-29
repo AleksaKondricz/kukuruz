@@ -16,21 +16,24 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<AvatarProps> = (args) => <Avatar {...args} />
+const Template: Story<AvatarProps> = (args) => <Avatar {...args} size='md' />
 
 
-//Playground Button
+//Playground Avatar
 export const PlaygroundAvatar = Template.bind({})
 
-//Variants of Buttons
+//Variants of Avatar
 export const Round = () => <Avatar variant='round' size='md' />
 export const Square = () => <Avatar variant='square' size='md' />
 
 
-//Sizes of Buttons
-export const Large = () => <Avatar variant='round' size='sm' />
+//Sizes of Avatar
+export const Large = () => <Avatar variant='round' size='lg' />
 export const Medium = () => <Avatar variant='round' size='md' />
-export const Small = () => <Avatar variant='round' size='lg' />
+export const Small = () => <Avatar variant='round' size='sm' />
+
+//Disabled avatar
+export const Disabled = () => <Avatar variant='round' size='md' disabled />
 
 
 
