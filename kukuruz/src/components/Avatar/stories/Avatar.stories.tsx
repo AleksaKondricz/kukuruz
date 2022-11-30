@@ -1,6 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { Avatar, AvatarProps } from '../Avatar';
+import '../styles/Avatar.scss';
 
 //meta data with the type Meta for our button component;
 const meta: Meta = {
@@ -16,24 +17,42 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<AvatarProps> = (args) => <Avatar {...args} size='md' />
+const Template: Story<AvatarProps> = (args) => <Avatar {...args} />
 
 
 //Playground Avatar
 export const PlaygroundAvatar = Template.bind({})
 
 //Variants of Avatar
-export const Round = () => <Avatar variant='round' size='md' />
-export const Square = () => <Avatar variant='square' size='md' />
+export const VariantsOfAvatar = () => (
+    <div className="avatars-wrapper">
+        <Avatar variant='square' size='lg' imageAvailable />
+        <Avatar variant='round' size='lg' imageAvailable />
+    </div>
+)
+
 
 
 //Sizes of Avatar
-export const Large = () => <Avatar variant='round' size='lg' />
-export const Medium = () => <Avatar variant='round' size='md' />
-export const Small = () => <Avatar variant='round' size='sm' />
+export const SizesOfAvatar = () => (
+    <div className='avatars-wrapper'>
+        <Avatar variant='round' size='sm' imageAvailable />
+        <Avatar variant='round' size='md' imageAvailable />
+        <Avatar variant='round' size='lg' imageAvailable />
+        <Avatar variant='round' size='sm' />
+        <Avatar variant='round' size='md' />
+        <Avatar variant='round' size='lg' />
+    </div>
+)
+
 
 //Disabled avatar
-export const Disabled = () => <Avatar variant='round' size='md' disabled />
+export const DisabledAvatar = () =>
+    <div className="avatars-wrapper">
+        <Avatar variant='round' size='lg' disabled />
+        <Avatar variant='square' size='lg' disabled />
+    </div >
+
 
 
 

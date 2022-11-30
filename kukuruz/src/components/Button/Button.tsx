@@ -11,9 +11,9 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button = ({ children, variant = 'filled', size = 'md', ...props }: ButtonProps) => {
-    const classNames = `btn btn-${variant} btn-${size} `;
+    const classNames = `btn btn-${variant} btn-${size} ${props.active ? `btn-${variant} btn-active` : ''}`;
     return (
-        <button className={classNames} {...props}>
+        <button className={classNames} {...props} >
             {children}
         </button>
     )

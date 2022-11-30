@@ -11,61 +11,81 @@
     transition: all .4s ease-in-out;
     letter-spacing: 1.25;
     display: inline-block;
-    &:hover{
+    margin: 4px;
+    &:hover:not([disabled]){
       -o-transition: all .4s ease-in-out;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
     }
+    &:disabled{
+      opacity: .5;
+      pointer-events: none;
+    }
   }
-  
+
+
   /* styling for our variants */
   .btn-filled {
     border: none;
     background-color: $indian-red;
     color: white;
-    &:hover {
+    &:hover:not([disabled]) {
       background-color: $english-vermillion;
     }
+    &:focus, :active{
+      background-color: $english-vermillion-dark;
+    }
+
   }
+
+  .btn-filled.btn-active{
+    background-color: $english-vermillion-dark;
+    pointer-events: none;
+  }
+
   .btn-outline {
     background-color: $white;
-    border: 1px solid $indian-red;
+    outline: 1px solid $indian-red;
+    border: none;
     color: $indian-red;
-    &:hover {
+    &:hover:not([disabled]) {
+      background-color: $pastel-pink-4;
+    }
+    &:focus, :active{
       background-color: $pastel-pink-4;
     }
   }
-  
+  .btn-outline.btn-active{
+    background-color: $pastel-pink-4;
+    pointer-events: none;
+  }
+
   .btn-subtle {
     background-color: $pastel-pink-3;
     color: $indian-red;
-    &:hover {
+    &:hover:not([disabled]) {
       background-color: $pastel-pink-4;
     }
   }
-  
+  .btn-subtle.btn-active{
+    background-color: $pastel-pink-4;
+    pointer-events: none;
+  }
   .btn-gradient{
     background-image: linear-gradient(to right, $english-vermillion, $indian-red  , $pastel-pink );
     background-size: 120% 100%;
-    &:hover{
+    &:hover:not([disabled]){
       background-position: 600% 0;
     }
   }
-  .btn-danger {
-    border: none;
-    background-color: #f18701;
-    color: white;
-    &:hover {
-      background-color: red;
-    }
+  .btn-gradient.btn-active{
+    background-image: linear-gradient(to right, $english-vermillion-dark, $english-vermillion  , $pastel-pink );
+    pointer-events: none;
   }
 
-  .btn-tertiary {
-    background-color: #f35b04;
-  }
-  
+
+
   /* styling for different shape*/
-
 
   .btn-sm{
     padding: 0.875rem calc(0.875rem * 1.33) ;
@@ -85,3 +105,5 @@
     font-size: 1.125rem;
     min-width: 4rem;
   }
+
+

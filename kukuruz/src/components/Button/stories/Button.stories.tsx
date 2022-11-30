@@ -1,6 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { Button, ButtonProps } from '../Button';
+import '../styles/Button.scss';
 
 //meta data with the type Meta for our button component;
 const meta: Meta = {
@@ -23,19 +24,43 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />
 export const PlaygroundButton = Template.bind({})
 
 //Variants of Buttons
-export const Primary = () => <Button variant='filled'>Filled Button</Button>
-export const Secondary = () => <Button variant='outline'>Outline Button</Button>
-export const Subtle = () => <Button variant='subtle'>Subtle Button</Button>
-export const Gradient = () => <Button variant='gradient'>Gradient Button</Button>
+export const VariantsOfButtons = () => (
+    <div className='buttons-wrapper'>
+        <Button variant='filled'>Filled Button</Button>
+        <Button variant='outline'>Outline Button</Button>
+        <Button variant='subtle'>Subtle Button</Button>
+        <Button variant='gradient'>Gradient Button</Button>
+    </div>
+)
+
 
 //Sizes of Buttons
-export const Large = () => <Button variant='filled' size='lg'>Large Button</Button>
-export const Medium = () => <Button variant='filled' size='md'>Medium Button</Button>
-export const Small = () => <Button variant='filled' size='sm'>Small Button</Button>
+export const SizesOfButtons = () => (
+    <div className='buttons-wrapper'>
+        <Button variant='filled' size='sm'>Small Button</Button>
+        <Button variant='filled' size='md'>Medium Button</Button>
+        <Button variant='filled' size='lg'>Large Button</Button>
+    </div >
+)
+
 
 //States of Buttons
-export const Regular = () => <Button variant='filled'>Regular</Button>
-export const Active = () => <Button variant='filled' active>Active</Button>
-export const Disabled = () => <Button variant='filled' disabled>Disabled</Button>
+export const StatesOfButtons = () => (
+    <div className='buttons-wrapper'>
+        <Button variant='filled'>Regular</Button>
+        <Button variant='filled' active>Active</Button>
+        <Button variant='filled' disabled>Disabled</Button>
+        <Button variant='outline'>Regular</Button>
+        <Button variant='outline' active>Active</Button>
+        <Button variant='outline' disabled>Disabled</Button>
+        <Button variant='gradient'>Regular</Button>
+        <Button variant='gradient' active>Active</Button>
+        <Button variant='gradient' disabled>Disabled</Button>
+        <Button variant='subtle'>Regular</Button>
+        <Button variant='subtle' active>Active</Button>
+        <Button variant='subtle' disabled>Disabled</Button>
+
+    </div>
+)
 
 
