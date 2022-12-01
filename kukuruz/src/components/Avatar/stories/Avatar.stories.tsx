@@ -53,7 +53,20 @@ export const DisabledAvatar = () =>
         <Avatar variant='square' size='lg' disabled />
     </div >
 
+//Avatar with badge
+export const AvatarWithBadge = () =>
+    <div className="avatars-wrapper" >
+        <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='active' />
+        <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='inactive' />
+        <Avatar variant='square' size='lg' imageAvailable withBadge avatarStatus='active' />
+        <Avatar variant='square' size='lg' imageAvailable withBadge avatarStatus='inactive' />
+    </div>
 
-
-
+//Group of avatars
+export const AvatarGroup = () =>
+    <div className="avatars-group" >
+        <Avatar variant='round' size='lg' imageAvailable />
+        <Avatar variant='round' size='lg' imageAvailable />
+        <Avatar variant='round' size='lg' imageAvailable disabled />
+    </div>
 

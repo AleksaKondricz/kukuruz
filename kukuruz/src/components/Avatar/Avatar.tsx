@@ -7,13 +7,20 @@ export interface AvatarProps {
     size: 'sm' | 'md' | 'lg',
     disabled?: boolean;
     imageAvailable?: boolean;
+    withBadge?: boolean;
+    avatarStatus?: 'active' | 'inactive'
 
 }
-export const Avatar = ({ variant, size, disabled, imageAvailable }: AvatarProps) => {
-    const classNames = `avatar avatar-${variant} avatar-${size} ${disabled && 'avatar-disabled'} ${!imageAvailable && 'avatar-text'}`;
+export const Avatar = ({ variant, size, disabled, imageAvailable, withBadge, avatarStatus }: AvatarProps) => {
+    const classNames = `avatar avatar-${variant} avatar-${size} ${disabled && 'avatar-disabled'} ${!imageAvailable && 'avatar-text'} `;
+    const classNamesBadge = `badge badge-${avatarStatus} `
     return (
+
         <div className={classNames}>
             {imageAvailable ? <img src={avatarSVG} alt='' /> : 'AK'}
+            {withBadge && <div className={classNamesBadge}></div>}
         </div>
+
+
     )
 }

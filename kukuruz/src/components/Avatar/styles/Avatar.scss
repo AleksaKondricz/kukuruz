@@ -2,13 +2,15 @@
 @import '../../../styles/theme/theme.scss';
 
   .avatar{
+    position: relative;
     background-color: $pastel-pink-4;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 34px;
+    width: 34px;
+    border-radius: 8px;
     margin: 4px;
-
-
     &>img{
       height: 100%;
       width: 100%;
@@ -44,6 +46,7 @@
     height: 42px;
     width: 42px;
 
+
   }
 
 /*avatar disabled*/
@@ -61,11 +64,53 @@
   line-height: 21px;
   letter-spacing: -0.5px;
   font-weight: normal;
-
+  align-items: center;
+  justify-content: center;
+  .badge{
+    margin-top: 32px;
+    margin-left: 32px;
+  }
 }
 
 .avatars-wrapper{
   display: flex;
   align-items: center;
 
+
 }
+
+.avatars-group{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &>div{
+
+    margin-right: -12px;
+  }
+  &>div:first-child{
+    z-index: 2;
+  }
+  &>div:nth-child(2){
+    z-index: 1;
+  }
+}
+
+.badge{
+  z-index: 1;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, .9);
+  margin-left: 10px;
+
+}
+
+.badge-inactive{
+  background-color: $english-vermillion;
+}
+.badge-active{
+  background-color: $success;
+}
+
+
