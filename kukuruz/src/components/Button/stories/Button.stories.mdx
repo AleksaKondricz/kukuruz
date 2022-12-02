@@ -4,16 +4,82 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 import { Button } from '../Button';
 
-<Meta title="MDX/Button" component={Button} />
+<Meta title="Documentation/Button" component={Button} />
 
 # Button
 
-With `MDX`, we can define a story for `Button` right in the middle of our Markdown documentation.
+Buttons are one of the most important elements when it comes to giving the user the ability to interact with the web site/app. It can open modals, delete elements, save, get the user back or forward on the page. That's why when designing a web or mobile app it's of utmost importance to pay attention how our buttons look like, are they accessible and are they functional.
+
+## Variants of Buttons
+
+In order to create hierarchy, it's recommendable using different variants of buttons.
 
 <Canvas>
-  <Story name="All buttons">
-    <form>
-      <Button variant="filled">Button</Button>
-    </form>
+  <Story name="Button variants">
+    <div>
+      <Button variant="filled">Primary Button</Button>
+      <Button variant="outline">Secondary Button</Button>
+      <Button variant="subtle">Subtle Button</Button>
+      <Button variant="gradient">Gradient Button</Button>
+    </div>
+  </Story>
+</Canvas>
+
+## Sizes of Buttons
+
+Buttons can come in different sizes as well, depending on where do we need to use the `Button` element. For example CTA Buttons are bigger than `buttons` in a form.
+
+<Canvas>
+  <Story name="Sizes ">
+    <div>
+      <Button variant="filled" size="sm">
+        Small Button
+      </Button>
+      <Button variant="filled" size="md">
+        Medium Button
+      </Button>
+      <Button variant="filled" size="lg">
+        Large Button
+      </Button>
+    </div>
+  </Story>
+</Canvas>
+
+## Different states of Button
+
+`Buttons` also can have different state. As a default state, we take the regular or normal state of a `button`. That's when a `button` has not been clicked or disabled, yet.
+
+<Canvas>
+  <Story name="States ">
+    <h4>Different states of a primary button </h4>
+    <div>
+      <Button variant="filled">Normal Button</Button>
+      <Button variant="filled" active>
+        Active Button
+      </Button>
+      <Button variant="filled" disabled>
+        Disabled Button
+      </Button>
+    </div>
+    <h4>Different states of a secondary button </h4>
+    <div>
+      <Button variant="outline">Normal Button</Button>
+      <Button variant="outline" active>
+        Active Button
+      </Button>
+      <Button variant="outline" disabled>
+        Disabled Button
+      </Button>
+    </div>
+    <h4>Different states of a subtle button </h4>
+    <div>
+      <Button variant="subtle">Normal Button</Button>
+      <Button variant="subtle" active>
+        Active Button
+      </Button>
+      <Button variant="subtle" disabled>
+        Disabled Button
+      </Button>
+    </div>
   </Story>
 </Canvas>
