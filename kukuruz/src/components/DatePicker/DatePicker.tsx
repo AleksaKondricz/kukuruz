@@ -1,12 +1,14 @@
 import React, { HTMLAttributes } from 'react';
 import './styles/DatePicker.scss';
+import { currentDate, lastDate } from '../../services/getTodayDate';
 
-export interface DatePickerProps extends HTMLAttributes<HTMLInputElement> { }
+export interface DatePickerProps extends HTMLAttributes<HTMLInputElement> {
+    size?: 'sm' | 'md' | 'lg';
+}
 
-export const DatePicker = () => {
-    const classNames = `date-input`;
-    const today = new Date();
-    console.log(today)
+export const DatePicker = ({size}: DatePickerProps) => {
+    const classNames = `date-picker date-picker-${size}`;
+
     return (
         <div className={classNames}>
             <label>Pick a date</label>
@@ -14,9 +16,9 @@ export const DatePicker = () => {
             <input
                 type="date"
                 name="trip-start"
-                value="2018-07-22"
-                min="2018-01-01"
-                max="2018-12-31"
+
+                min={currentDate}
+                max={lastDate}
             />
         </div>
     );
