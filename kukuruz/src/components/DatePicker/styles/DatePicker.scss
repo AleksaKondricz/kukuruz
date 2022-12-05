@@ -10,6 +10,16 @@
     font-family: $main-font;
     margin: 8px 0;
     padding-left: 4px;
+    background-color: $background-1;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color .35s ease-in;
+    &:focus{
+      background-color: $background-3;
+      outline: none;
+      border: none;
+    }
 }
 
   /* styling for different size*/

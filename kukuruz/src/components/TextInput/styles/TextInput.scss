@@ -20,6 +20,7 @@
     & > input{
        outline: none;
        border: 1px solid #333;
+       border-radius: 4px;
        padding: 8px 16px;
        margin: 8px 0;
        transition: border .3s ease-in-out;
@@ -29,7 +30,7 @@
        ::placeholder{
         font-size: 14px;
         font-weight: 400;
-        color: #33333360;
+        color: #33333398;
        }
     }
 }
@@ -100,3 +101,37 @@
     position: absolute;
     margin-left: 8px;
 }
+
+.text-input-subtle input{
+    border: none;
+    background-color: $background-1;
+    transition: background-color .35s ease-in;
+    &:focus{
+        background-color: $background-3;
+        outline: none;
+        border: none;
+    }
+}
+
+.text-input-subtle.text-input-focused {
+    & > input{
+        background-color: $background-3;
+        outline: none;
+        border: none;
+    }
+}
+.text-input-subtle.text-input-success{
+    & > input{
+
+        background-color: $background-success;
+    }
+}
+.text-input-subtle.text-input-error{
+    & > input{
+
+        background-color: $background-error;
+    }
+}
+
+
+

@@ -22,6 +22,16 @@ const Template: Story<TextInputProps> = (args) => <TextInput {...args} />
 //Playground TextInput
 export const TextInputPlayground = Template.bind({})
 
+//Variants of TextInput
+export const TextInputVariants = () => (
+    <div className='inputs-wrapper'>
+        <TextInput type='text' variant='subtle' placeholder='I am subtle ...' size='sm' />
+        <TextInput type='text' variant='subtle' placeholder='I am subtle and focused...' size='sm' state='focused' />
+        <TextInput type='text' variant='subtle' placeholder='I am subtle and disabled' size='sm' state='disabled' />
+        <TextInput type='text' variant='subtle' placeholder='I am subtle and success ...' size='sm' state='success' />
+        <TextInput type='text' variant='subtle' placeholder='I am subtle and error ...' size='sm' state='error' />
+    </div>
+)
 //Types of TextInput
 export const TextInputTypes = () => (
     <div className='inputs-wrapper'>

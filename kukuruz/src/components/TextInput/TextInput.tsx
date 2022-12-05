@@ -5,6 +5,7 @@ import './styles/TextInput.scss'
 
 export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
     type: 'text' | 'password' | 'number';
+    variant?: 'subtle' | 'outline';
     label?: string;
     placeholder?: string;
     size?: 'sm' | 'md' | 'lg';
@@ -14,8 +15,8 @@ export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
 
 }
 
-export const TextInput = ({ type, label, placeholder, size, state, withIcon }: TextInputProps) => {
-    const classNames = `text-input-wrapper text-input-${size} text-input-${state} ${withIcon && 'text-input-with-icon'}`
+export const TextInput = ({ type, label, placeholder, variant, size, state, withIcon }: TextInputProps) => {
+    const classNames = `text-input-wrapper text-input-${size} text-input-${variant} text-input-${state} ${withIcon && 'text-input-with-icon'}`
     return (
         <div className={classNames}>
             {withIcon && <div className='icon-start'><IconUser stroke='1.8' color='#33333350' fill='#33333350' size='18' /></div>}
