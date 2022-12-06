@@ -4,12 +4,11 @@ import './styles/Switch.scss';
 export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
     variant: 'round' | 'square';
     disabled?: boolean;
-    checked?: boolean;
     size?: 'sm' | 'md' | 'lg'
 
 }
-export const Switch = ({ variant, size, disabled, checked }: SwitchProps) => {
-    const classNames = `switch ${size} switch-${variant}  ${disabled && 'switch-disabled'} ${checked && 'switch-checked'}`;
+export const Switch = ({ variant, size, disabled }: SwitchProps) => {
+    const classNames = `switch ${size} switch-${variant}  ${disabled ? `disabled`:``}`;
     return (
         <div className='switch-wrapper'>
             <span className={classNames}>

@@ -86,8 +86,13 @@ display: inline-block;
 }
 .switch.md input:checked ~ label::after{
     translate: 20px 0;
+
 }
 .switch-stories-display{
     display: flex;
     align-items: center;
+}
+
+.switch-checked input:checked ~ label{
+    background-color: $success;
 }

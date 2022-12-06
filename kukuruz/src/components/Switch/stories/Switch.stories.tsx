@@ -34,9 +34,9 @@ export const SwitchesVariants = () => (
 //Sizes of Switches
 export const SwitchesSizes = () => (
     <div className='switch-stories-display'>
-        <Switch variant='round' size='sm' checked/>
-        <Switch variant='round' size='md' checked/>
-        <Switch variant='round' size='lg' checked/>
+        <Switch variant='round' size='sm' />
+        <Switch variant='round' size='md' />
+        <Switch variant='round' size='lg' />
 
     </div>
 )
