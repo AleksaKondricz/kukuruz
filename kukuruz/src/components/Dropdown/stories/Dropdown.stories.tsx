@@ -22,11 +22,29 @@ export default meta;
 
 const optionsToMap = [{ value: 'pick one', option: 'first option' }, { value: 'second option', option: 'second option' }, { value: 'third option', option: 'third option' }];
 
-//States of Checkboxes
-export const StatesOfCheckboxed = () => (
-    <div className='checkboxes-wrapper'>
+//States of Dropdown
+export const StatesOfDropdowns = () => (
+    <div className='dropdowns-wrapper'>
         <Dropdown label='Pick one' options={optionsToMap} />
+        <Dropdown label='Pick one' options={optionsToMap} disabled/>
     </div>
 )
 
+//Sizes of Dropdown
+export const SizesOfDropdowns = () => (
+    <div className='dropdowns-wrapper'>
+        <Dropdown label='Pick one' options={optionsToMap} size='sm'/>
+        <Dropdown label='Pick one' options={optionsToMap} size='md'/>
+        <Dropdown label='Pick one' options={optionsToMap} size='lg'/>
+    </div>
+)
+
+//Varaiants of Dropdown
+export const VariantsOfDropdowns = () => (
+    <div className='dropdowns-wrapper'>
+        <Dropdown label='Pick one' options={optionsToMap} size='md' variant='subtle'/>
+        <Dropdown label='Pick one' options={optionsToMap} size='md'variant='outline'/>
+     
+    </div>
+)
 
