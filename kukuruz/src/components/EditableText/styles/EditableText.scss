@@ -1,0 +1,30 @@
+@import '../../../styles/theme/theme.scss';
+
+.editableText-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.editableText{
+    border: none;
+    outline: none;
+    padding: 8px;
+    :focus{
+        border:none;
+        outline: none;
+    }
+}
+.editableText-mainHeading{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.editableText-subHeading{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.editableText-paragraph{
+    font-size: 1rem;
+    font-weight: 100;
+}

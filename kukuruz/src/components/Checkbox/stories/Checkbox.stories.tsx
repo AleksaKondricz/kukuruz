@@ -24,13 +24,14 @@ const Template: Story<CheckboxProps> = (args) => <Checkbox {...args} />
 export const PlaygroundCheckbox = Template.bind({})
 
 
+//Variants of Checkboxes
 
 
 
 
 
 //States of Checkboxes
-export const StatesOfCheckboxed = () => (
+export const StatesOfCheckboxes = () => (
     <div className='checkboxes-wrapper'>
         <Checkbox label='Not checked yet' />
         <Checkbox checked label='I am checked' />
