@@ -19,16 +19,22 @@ export default meta;
 const Template: Story<EditableTextProps> = (args) => <EditableText {...args} />
 
 
-//Playground TextInput
+//Playground EditableText
 export const EditableTextPlayground = Template.bind({})
 
-//Variants of TextInput
-export const TextInputVariants = () => (
+//Variants of EditableText
+export const EditableTextVariants = () => (
     <div className='editableText-wrapper'>
-        <EditableText  variant='mainHeading' value='I am the main heading' />
-        <EditableText  variant='subHeading' value='I am subheading'  />
-        <EditableText  variant='paragraph' value='I am just a paragraph' />
-
+        <EditableText  variant='h1' value='H1 Heading' />
+        <EditableText  variant='h2' value='H2 Heading'  />
+        <EditableText  variant='h3' value='H3 Heading' />
+        <EditableText  variant='h4' value='H4 Heading' />
+        <EditableText  variant='h5' value='H5 Heading'  />
+        <EditableText  variant='h6' value='H6 Heading' />
+        <EditableText  variant='p' value='Paragraph' />
+        <EditableText  variant='description' value='This is a short description about the topic ...' />
+        <EditableText  variant='errorMsg' value='This is an error message ...' />
+        <EditableText  variant='successMsg' value='This is an success message ...' />
     </div>
 )
 

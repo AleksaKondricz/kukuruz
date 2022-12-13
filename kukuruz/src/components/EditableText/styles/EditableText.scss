@@ -16,15 +16,67 @@
         outline: none;
     }
 }
-.editableText-mainHeading{
-    font-size: 2.4rem;
-    font-weight: 900;
+.editableText-h1{
+    letter-spacing: -1px;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 700;
 }
-.editableText-subHeading{
-    font-size: 2rem;
+
+.editableText-h2{
+    letter-spacing: -0.2px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.editableText-h3{
+    letter-spacing: -0.2px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.editableText-h4{
+    letter-spacing: -0.2px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.editableText-h5{
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.editableText-h6{
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 400;
 }
-.editableText-paragraph{
-    font-size: 1rem;
-    font-weight: 100;
+
+.editableText-p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.editableText-description{
+    font-size: 10px;
+    font-weight: normal;
+    opacity: .8;
+}
+
+.editableText-errorMsg{
+    font-size: 10px;
+    font-weight: normal;
+    color: $indian-red;
+}
+
+.editableText-successMsg{
+    font-size: 10px;
+    font-weight: normal;
+    color: $success;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import { Dropdown, DropdownProps } from '../Dropdown';
+import { Meta} from '@storybook/react'
+import { Dropdown} from '../Dropdown';
 import '../styles/Dropdown.scss';
 
 //meta data with the type Meta for our Dropdown component;
@@ -44,7 +44,7 @@ export const VariantsOfDropdowns = () => (
     <div className='dropdowns-wrapper'>
         <Dropdown label='Pick one' options={optionsToMap} size='md' variant='subtle'/>
         <Dropdown label='Pick one' options={optionsToMap} size='md'variant='outline'/>
-     
+
     </div>
 )
 

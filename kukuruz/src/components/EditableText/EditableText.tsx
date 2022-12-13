@@ -1,17 +1,19 @@
 import React, { HTMLAttributes } from 'react'
 import './styles/EditableText.scss'
 
-export interface EditableTextProps extends HTMLAttributes<HTMLInputElement> {
+export interface EditableTextProps extends HTMLAttributes<HTMLDivElement> {
 
-    variant?: 'mainHeading' | 'subHeading' | 'paragraph';
+    variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'description' | 'errorMsg' | 'successMsg';
     value?: string;
 
 
 }
 
-export const EditableText = ({value, variant}: EditableTextProps) => {
+export const EditableText = ({ variant, value }: EditableTextProps) => {
     const classNames = `editableText editableText-${variant}`
-    return(
-        <input type='text' value={value} className={classNames}/>
+    return (
+        <div contentEditable className={classNames}>
+            {value}
+        </div>
     )
 }
