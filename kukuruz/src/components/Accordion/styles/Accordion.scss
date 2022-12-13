@@ -1,0 +1,40 @@
+@import '../../../styles/theme/theme.scss';
+
+.accordion-wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: $background-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.accordion-box{
+    min-width: 400px;
+    max-width: 600px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 24px 48px;
+    border-radius: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 100px;
+}
+.accordion-item{
+    &>h4{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+        &>span{
+            cursor: pointer;
+            margin-right: 8px;
+        }
+    }
+
+}
