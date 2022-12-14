@@ -1,0 +1,67 @@
+@import './_colors.scss';
+@import './_fonts.scss';
+
+@mixin main-heading {
+  letter-spacing: -1px;
+  font-size: 44px;
+  line-height: 62px;
+  font-weight: 900;
+}
+
+@mixin subheading {
+  letter-spacing: -0.2px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+@mixin third-heading {
+  letter-spacing: -0.2px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@mixin fourth-heading {
+  letter-spacing: -0.2px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+@mixin fifth-heading {
+  letter-spacing: -0.2px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+@mixin sixth-heading {
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+@mixin body-text {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+@mixin description-text {
+  font-family: $main-font;
+  font-size: 10px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+@mixin error-msg {
+  font-family: $main-font;
+  font-size: 10px;
+  font-weight: normal;
+  color: $indian-red;
+}
+
+@mixin success-msg {
+  font-family: $main-font;
+  font-size: 10px;
+  font-weight: normal;
+  color: $success;
+}

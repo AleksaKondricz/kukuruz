@@ -29,11 +29,19 @@ export const VariantsOfButtons = () => (
         <Button variant='filled'>Filled Button</Button>
         <Button variant='outline'>Outline Button</Button>
         <Button variant='subtle'>Subtle Button</Button>
-        <Button variant='gradient'>Gradient Button</Button>
+        <Button variant='icon' withIcon>Filled Button</Button>
+
     </div>
 )
 
+//Different radiuses of Buttons
+export const RadiusOfButtons = () => (
+    <div className='buttons-wrapper'>
+        <Button variant='filled' radius='none' withIcon>Filled Button</Button>
+        <Button variant='filled' radius='with-radius' withIcon>Filled Button</Button>
 
+    </div>
+)
 //Sizes of Buttons
 export const SizesOfButtons = () => (
     <div className='buttons-wrapper'>
@@ -53,9 +61,6 @@ export const StatesOfButtons = () => (
         <Button variant='outline'>Regular</Button>
         <Button variant='outline' active>Active</Button>
         <Button variant='outline' disabled>Disabled</Button>
-        <Button variant='gradient'>Regular</Button>
-        <Button variant='gradient' active>Active</Button>
-        <Button variant='gradient' disabled>Disabled</Button>
         <Button variant='subtle'>Regular</Button>
         <Button variant='subtle' active>Active</Button>
         <Button variant='subtle' disabled>Disabled</Button>

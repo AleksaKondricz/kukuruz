@@ -17,66 +17,42 @@
     }
 }
 .editableText-h1{
-    letter-spacing: -1px;
-    font-size: 32px;
-    line-height: 52px;
-    font-weight: 700;
+@include main-heading;
 }
 
 .editableText-h2{
-    letter-spacing: -0.2px;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 500;
+    @include subheading;
 }
 
 .editableText-h3{
-    letter-spacing: -0.2px;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 300;
+  @include third-heading;
 }
 
 .editableText-h4{
-    letter-spacing: -0.2px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
+    @include fourth-heading;
 }
 
 .editableText-h5{
-    letter-spacing: -0.2px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
+    @include fifth-heading;
 }
 
 .editableText-h6{
-    letter-spacing: -0.2px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+    @include sixth-heading;
+
 }
 
 .editableText-p{
-    font-size: 16px;
-    font-weight: normal;
+ @include body-text;
 }
 
 .editableText-description{
-    font-size: 10px;
-    font-weight: normal;
-    opacity: .8;
+ @include description-text;
 }
 
 .editableText-errorMsg{
-    font-size: 10px;
-    font-weight: normal;
-    color: $indian-red;
+    @include error-msg
 }
 
 .editableText-successMsg{
-    font-size: 10px;
-    font-weight: normal;
-    color: $success;
+  @include success-msg
 }

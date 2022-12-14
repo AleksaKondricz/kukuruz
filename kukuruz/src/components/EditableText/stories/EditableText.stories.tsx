@@ -16,7 +16,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<EditableTextProps> = (args) => <EditableText {...args} />
+const Template: Story<EditableTextProps> = (args) => <EditableText {...args} value='Playground text' />
 
 
 //Playground EditableText
