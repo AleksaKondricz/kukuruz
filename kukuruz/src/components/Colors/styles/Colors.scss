@@ -1,0 +1,71 @@
+@import '../../../styles/theme/theme.scss';
+
+.instruction-text{
+    @include body-text;
+}
+.colors-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $Spacing-S;
+    &>div{
+        @include description-text;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 8px;
+        margin: $Spacing-S;
+
+    }
+}
+.black-pure{
+    color: $white;
+    background-color: $black-full;
+}
+.black-shade{
+    color: $white;
+    background-color: $black;
+}
+.white-pure{
+    background-color: $white;
+    border: 1px solid $gray;
+}
+.white-shade{
+    background-color: $white-shade;
+    border: 1px solid $gray;
+}
+.gray-pure{
+    background-color: $gray;
+    border: 1px solid $gray;
+}
+.gray-shade{
+    background-color: $neutral;
+    border: 1px solid $gray;
+}
+.green-900{
+    background-color: $green-900;
+}
+.green-800{
+    background-color: $green-800;
+}
+.green-700{
+    background-color: $green-700;
+}
+.green-600{
+    background-color: $green-600;
+}
+.green-500{
+    background-color: $green-500;
+}
+.green-400{
+    background-color: $green-400;
+}
+.green-300{
+    background-color: $green-300;
+}
+.green-200{
+    background-color: $green-200;
+}

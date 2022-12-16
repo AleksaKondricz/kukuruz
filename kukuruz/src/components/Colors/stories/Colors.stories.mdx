@@ -1,0 +1,71 @@
+<!-- Colors.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import '../styles/Colors.scss';
+
+<Meta title="Documentation/Colors" />
+
+# Colors
+
+Color choice matters. Each one invokes some particular visual or emotion in those who see it. You can use that in design. Let’s talk about how to create a user interface that takes full advantage of color selection. It’s one of those user interface design principles that should benefit your bottom line.
+
+## Basic colors
+
+Here we are introducing the blacks, whites, grays and neutrals. Colors we are gonna use for text, labels, backgrounds and shadows.
+
+<Canvas>
+  <Story name="Basic colors">
+    <h3>Different shades of black</h3>
+    <p className='instruction-text'>The first black color wll be used for color of fonts. It covers all use cases, except of when font is applied on description or as placeholder. In that case we apply an opacity of .6</p>
+    <div className='colors-wrapper'>
+        <div className='black-pure'>#000000</div>
+        <div className='black-shade'>#191b1d</div>
+    </div>
+    <h3>Different shades of white</h3>
+    <p className='instruction-text'>The pure white color with hex code of #FFFFFF (for those unfamiliar with HEX values of colors, although I don't think there is a developer/designer who does not know it :)), is used soley as background. The shade of the white bellow is used for when we want to elevate certain element or we have accessibility issue.</p>
+    <div className='colors-wrapper'>
+           <div className='white-pure'>#FFFFFF</div>
+           <div className='white-shade'>#f7f7f8</div>
+    </div>
+    <h3>Different shades of gray</h3>
+    <p className='instruction-text'>The first gray shade we use it mostly for borders, or disbaled inputs with variant 'outline'.The second gray shade with HEX value #EDFOEF is used for buttons with variant 'subtle', to elevate elements, to potentiate icons. </p>
+    <div className='colors-wrapper'>
+           <div className='gray-pure'>#edf0ef</div>
+           <div className='gray-shade'>#f4f6f8</div>
+    </div>
+  </Story>
+</Canvas>
+
+## Accent colors
+
+Bellow I will elaborate about the primary color of our app, as well as the diferent accent colors we are going to use to make our design speak to the end user using the psychology of colors.
+
+<Canvas>
+  <Story name="Accent colors">
+    <h3>Different shades of Green</h3>
+    <p className='instruction-text'>Green color and its shades we use to showcast that the action is successful. For example input validation.Or that a certain notification what the user got has positive meaning.</p>
+    <div className='colors-wrapper'>
+        <div className='green-900'>#dbfb9a</div>
+        <div className='green-800'>#dffba4</div>
+        <div className='green-700'>#e2fcae</div>
+        <div className='green-6oo'>#e6fcb8</div>
+        <div className='green-500'>#e9fdc2</div>
+        <div className='green-4oo'>#edfdcd</div>
+        <div className='green-300'>#f1fdd7</div>
+        <div className='green-2oo'>#f4fee1</div>
+        <div className='green-1oo'>#f8feeb</div>
+    </div>
+    <h3>Different shades of white</h3>
+    <p className='instruction-text'>The pure white color with hex code of #FFFFFF (for those unfamiliar with HEX values of colors, although I don't think there is a developer/designer who does not know it :)), is used soley as background. The shade of the white bellow is used for when we want to elevate certain element or we have accessibility issue.</p>
+    <div className='colors-wrapper'>
+           <div className='white-pure'>#FFFFFF</div>
+           <div className='white-shade'>#f7f7f8</div>
+    </div>
+    <h3>Different shades of gray</h3>
+    <p className='instruction-text'>The first gray shade we use it mostly for borders, or disbaled inputs with variant 'outline'.The second gray shade with HEX value #EDFOEF is used for buttons with variant 'subtle', to elevate elements, to potentiate icons. </p>
+    <div className='colors-wrapper'>
+           <div className='gray-pure'>#edf0ef</div>
+           <div className='gray-shade'>#f4f6f8</div>
+    </div>
+  </Story>
+</Canvas>
