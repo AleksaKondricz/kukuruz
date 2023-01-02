@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
 }
+.buttons-wrapper-doc{
+  display: flex;
+  align-items: center;
+}
 /* base styling for our button */
 .btn {
   @include body-text;
