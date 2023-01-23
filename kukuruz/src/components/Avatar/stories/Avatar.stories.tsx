@@ -58,8 +58,6 @@ export const AvatarWithBadge = () =>
     <div className="avatars-wrapper" >
         <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='active' />
         <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='inactive' />
-        <Avatar variant='square' size='lg' imageAvailable withBadge avatarStatus='active' />
-        <Avatar variant='square' size='lg' imageAvailable withBadge avatarStatus='inactive' />
     </div>
 
 //Group of avatars

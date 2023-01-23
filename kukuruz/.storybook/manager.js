@@ -1,15 +1,16 @@
 // .storybook/manager.js
 
 import { addons } from '@storybook/addons';
+import myTheme from './MyTheme.js';
 
 addons.setConfig({
-  isFullscreen: true,
+  isFullscreen: false,
   showNav: true,
   showPanel: true,
   panelPosition: 'bottom',
   enableShortcuts: true,
   showToolbar: true,
-  theme: undefined,
+  theme: myTheme,
   selectedPanel: undefined,
   initialActive: 'sidebar',
   sidebar: {

@@ -19,18 +19,18 @@
     position: relative;
     & > input{
        outline: none;
-       border: 1px solid #333;
+       border: 1px solid $black;
        border-radius: 4px;
        padding: 8px 16px;
        margin: 8px 0;
        transition: border .3s ease-in-out;
        :focus{
-        border: 1.5px solid #333;
+        border: 1.1px solid $black-full;
        }
        ::placeholder{
         font-size: 14px;
-        font-weight: 400;
-        color: #33333398;
+        font-weight: 300;
+        color: $black;
        }
     }
 }
@@ -54,12 +54,17 @@
 }
 
 .text-input-focused input{
-    border: 1.5px solid #333;
+    border: 1.1px solid $black-full;
 }
 .text-input-disabled{
     pointer-events: none;
-    opacity: .5;
-}
+    
+    &>input{
+        background-color: $gray;
+        opacity: .7;
+    }
+    }
+    
 
 .text-input-success{
     position: relative;
@@ -67,7 +72,8 @@
     align-items: flex-end;
     justify-content: center;
   & > input{
-    border: 1.5px solid $success;
+    border: 1.1px solid $success;
+    background-color: $green-100;
   }
   &>svg{
     position: absolute;
@@ -81,7 +87,8 @@
     align-items: flex-end;
     justify-content: center;
   & > input{
-    border: 1.5px solid $english-vermillion;
+    border: 1.5px solid $red-900;
+    background: $red-100;
   }
   &>svg{
     position: absolute;

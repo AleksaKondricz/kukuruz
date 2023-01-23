@@ -14,10 +14,26 @@
     font-weight: 500;
     font-size: 14px;
     margin-right: 8px;
-    position: relative;
+    position:relative;
+
+     ::after{
+        .select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+     }
+     ::after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: .3em;
+    right: .75em;
+    border-top: 8px solid $black;
+    opacity: 0.5;
+     }
     & > select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: $white;
        outline: none;
-       border: 1px solid #333;
+       border: 1px solid $black;
        border-radius: 4px;
        padding: 8px 16px;
        padding-left: 4px;

@@ -17,9 +17,9 @@ In order to create hierarchy, it's recommendable using different variants of but
 
 <Canvas>
   <Story name="Button variants">
-    <div>
+    <div style={{display: 'flex', alignItems: 'center'}}> 
       <Button variant="filled">Primary Button</Button>
-      <Button variant="outline">Secondary Button</Button>
+      <Button variant="outline" radius='with-radius'>Secondary Button</Button>
       <Button variant="subtle">Subtle Button</Button>
       <Button variant="gradient">Gradient Button</Button>
     </div>
@@ -32,8 +32,8 @@ Buttons can come in different sizes as well, depending on where do we need to us
 
 <Canvas>
   <Story name="Sizes ">
-    <div>
-      <Button variant="filled" size="sm">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+      <Button variant="filled" radius='with-radius' size="sm">
         Small Button
       </Button>
       <Button variant="filled" size="md">
@@ -53,9 +53,9 @@ Buttons can come in different sizes as well, depending on where do we need to us
 <Canvas>
   <Story name="States ">
     <h4>Different states of a primary button </h4>
-    <div>
+    <div style={{display: 'flex', alignItems: 'center'}}>
       <Button variant="filled">Normal Button</Button>
-      <Button variant="filled" active>
+      <Button variant="filled" radius='with-radius' active> 
         Active Button
       </Button>
       <Button variant="filled" disabled>
@@ -63,7 +63,7 @@ Buttons can come in different sizes as well, depending on where do we need to us
       </Button>
     </div>
     <h4>Different states of a secondary button </h4>
-    <div>
+    <div style={{display: 'flex', alignItems: 'center'}}>
       <Button variant="outline">Normal Button</Button>
       <Button variant="outline" active>
         Active Button
@@ -73,7 +73,7 @@ Buttons can come in different sizes as well, depending on where do we need to us
       </Button>
     </div>
     <h4>Different states of a subtle button </h4>
-    <div>
+    <div style={{display: 'flex', alignItems: 'center'}}>
       <Button variant="subtle">Normal Button</Button>
       <Button variant="subtle" active>
         Active Button

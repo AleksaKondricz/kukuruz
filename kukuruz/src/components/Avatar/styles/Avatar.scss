@@ -1,9 +1,13 @@
 
 @import '../../../styles/theme/theme.scss';
 
+  .avatars-docs{
+    display: flex;
+    align-items: center;
+  }
   .avatar{
     position: relative;
-    background-color: $pastel-pink-4;
+    background-color: $blue-500;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -60,7 +64,7 @@
 .avatar-text{
   padding: 4px;
   font-family: $main-font;
-  color: $english-vermillion;
+  color: $black;
   line-height: 21px;
   letter-spacing: -0.5px;
   font-weight: normal;
@@ -107,10 +111,10 @@
 }
 
 .badge-inactive{
-  background-color: $english-vermillion;
+  background-color: $red-900;
 }
 .badge-active{
-  background-color: $success;
+  background-color: $blue-900;
 }
 
 

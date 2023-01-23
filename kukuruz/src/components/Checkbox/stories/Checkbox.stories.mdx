@@ -1,0 +1,31 @@
+<!-- Checkbox.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { Checkbox } from '../Checkbox';
+
+import '../styles/Checkbox.scss';
+
+<Meta title="Documentation/Checkbox" component={Checkbox} />
+
+# Checkbox
+
+Checkbox are widely used in forms when there is a list of options and the user may select any number of choices.
+
+## States of Checkbox
+
+Based on the state, a checkbox can be `unchecked`, `checked`, `checked disabled`, `unchecked disabled`.
+
+<Canvas>
+  <Story name="Different states of a checkbox">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+      <Checkbox label='Not checked yet' />
+        <Checkbox checked label='I am checked' />
+        <Checkbox disabled label='I am disabled' />
+        <Checkbox disabled checked label='I am checked & disabled' />
+    </div>
+  </Story>
+</Canvas>
+
+
+

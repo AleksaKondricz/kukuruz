@@ -1,5 +1,6 @@
 const path = require("path");
 
+
 module.exports = {
   stories: ['../src/components/**/stories/*.stories.@(ts|tsx|js|jsx|mdx)'],
   addons: [
@@ -16,6 +17,7 @@ module.exports = {
            },
        },
   ],
+
   framework: "@storybook/react",
   webpackFinal: async (config, { configType }) => {
     // Make whatever fine-grained changes you need
@@ -24,7 +26,7 @@ module.exports = {
       use: ["style-loader", "css-loader", "sass-loader"],
       include: path.resolve(__dirname, "../"),
     });
-
+  
     // Return the altered config
     return config;
   },

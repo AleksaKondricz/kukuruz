@@ -1,0 +1,69 @@
+<!-- Avatar.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { Avatar } from '../Avatar';
+
+<Meta title="Documentation/Avatar" component={Avatar} />
+
+# Avatar
+
+Avatar provides a graphic representation of an identity. It can display an image, text, or an icon.
+
+## Variants of Avatar
+
+Based on the shape, in this design system you can choose between `round` or `square` avatar. 
+
+<Canvas>
+  <Story name="Avatar variants">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+       <Avatar variant='square' size='lg' imageAvailable />
+       <Avatar variant='round' size='lg' imageAvailable />
+    </div>
+  </Story>
+</Canvas>
+
+If the user has uploaded an avatar photo, then the avatar displays the chosen photo of the user. If photo has not been uploaded by the user then the avatar component get the first letter of user's name and displays it as avatar.
+
+<Canvas>
+  <Story name="Avatar variants based on photo upload">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+       <Avatar variant='round' size='lg' imageAvailable />
+       <Avatar variant='round' size='lg'  />
+    </div>
+  </Story>
+</Canvas>
+
+Avatars come in different sizes. An avatar can be `sm`, `md` or `lg`.
+
+<Canvas>
+  <Story name="Avatar in different sizes">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+       <Avatar variant='round' size='sm' imageAvailable />
+       <Avatar variant='round' size='md' imageAvailable />
+       <Avatar variant='round' size='lg' imageAvailable />
+    </div>
+  </Story>
+</Canvas>
+
+Avatars can be `disabled`.
+
+<Canvas>
+  <Story name="Avatar states">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+       <Avatar variant='round' size='lg' imageAvailable disabled/>
+       <Avatar variant='round' size='lg' imageAvailable />
+    </div>
+  </Story>
+</Canvas>
+
+Avatars can come with a `badge` which tells the user wheter it active or not. We see this mostly when we have user logged in the application, in his dashboard or when building a chat.
+
+<Canvas>
+  <Story name="Avatar with a badge">
+    <div style={{display: 'flex', alignItems: 'center'}}>
+       <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='active'/>
+       <Avatar variant='round' size='lg' imageAvailable withBadge avatarStatus='inactive'/>
+    </div>
+  </Story>
+</Canvas>

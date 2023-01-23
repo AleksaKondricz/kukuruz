@@ -12,6 +12,7 @@
 .btn {
   @include body-text;
   padding: 0.6rem 1rem;
+  outline: none;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -35,6 +36,7 @@
 }
 .btn-with-radius {
   border-radius: calc(1.2rem + 14px);
+  outline: none;
   &:hover:not([disabled]) {
     background-color: $black-full;
     & > span {
@@ -92,8 +94,7 @@
 
 .btn-outline {
   background-color: $white;
-  outline: 1px solid $black;
-  border: none;
+  border: 1px solid $black;
   color: $black;
   &:hover:not([disabled]) {
     background-color: $neutral;
