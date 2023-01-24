@@ -1,0 +1,37 @@
+<!-- Switch.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { Switch } from '../Switch';
+
+import '../styles/Switch.scss';
+
+
+<Meta title="Documentation/Switch" component={Switch} />
+
+# Switch
+
+Toggle switches are digital on/off switches. They prompt users to choose between two mutually exclusive options and always have a default value. Toggles should provide immediate results, giving users the freedom to control their preferences as needed.
+
+## Variants of Switchs
+
+<Canvas>
+  <Story name="Switch variants">
+    <div className='switch-stories-display'>
+        <Switch variant='round'/>
+        <Switch variant='square'/>
+    </div>
+  </Story>
+</Canvas>
+
+## Sizes of Switchs
+
+<Canvas>
+  <Story name="Switch sizes">
+     <div className='switch-stories-display'>
+        <Switch variant='round' size='sm' />
+        <Switch variant='round' size='md' />
+        <Switch variant='round' size='lg' />
+    </div>
+  </Story>
+</Canvas>

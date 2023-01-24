@@ -1,28 +1,25 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import { EditableText, EditableTextProps } from '../EditableText';
+<!-- EditableText.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { EditableText } from '../EditableText';
+
 import '../styles/EditableText.scss';
 
-//meta data with the type Meta for our text input component;
-const meta: Meta = {
-    title: 'EditableText',
-    component: EditableText,
-    argTypes: {
- 
-    }
-}
 
-export default meta;
+<Meta title="Documentation/EditableText" component={EditableText} />
 
-const Template: Story<EditableTextProps> = (args) => <EditableText {...args} defaultValue="Check me out" />
+# EditableText
 
+Editable text is a component where end user can type his own sentences and see how will they look based on the typography variant chosen. This is very helpful when designing the perfect UI.
 
-//Playground EditableText
-export const EditableTextPlayground = Template.bind({})
+## Variants of EditableTexts
 
-//Variants of EditableText
-export const EditableTextVariants = () => (
-    <div className='editableText-wrapper'>
+In order to create hierarchy, it's recommendable using different variants of Editable texts.
+
+<Canvas>
+  <Story name="EditableText variants">
+      <div className='editableText-wrapper'>
         <EditableText  variant='h1' defaultValue='H1 Heading' />
         <EditableText  variant='h2' defaultValue='H2 Heading'  />
         <EditableText  variant='h3' defaultValue='H3 Heading' />
@@ -34,7 +31,6 @@ export const EditableTextVariants = () => (
         <EditableText  variant='errorMsg' defaultValue='This is an error message ...' />
         <EditableText  variant='successMsg' defaultValue='This is an success message ...' />
     </div>
-)
-
-
+  </Story>
+</Canvas>
 

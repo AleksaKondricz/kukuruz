@@ -6,6 +6,6 @@ const yyyy = today.getFullYear();
 const maxYear = yyyy + 10
 
 
-export const currentDate = yyyy + '-' + mm + '-' + dd;
-export const lastDate = maxYear + '-' + mm + '-' + dd;
+export const currentDate = dd + '-' + mm + '-' + yyyy;
+export const lastDate = dd + '-' + mm + '-' + maxYear;
 

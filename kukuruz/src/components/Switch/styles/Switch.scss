@@ -31,7 +31,7 @@ display: inline-block;
     }
 }
 .switch input:checked ~ label{
-    background-color: $success;
+    background-color: $blue-900;
 }
 
 .switch input:active:not(:disabled) ~ label::after{

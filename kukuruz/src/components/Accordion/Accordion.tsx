@@ -21,7 +21,7 @@ export const Accordion = ({ }: AccordionProps) => {
     return (
         <div className='accordion-wrapper'>
             <div className='accordion-box'>
-                <h2>An Accordion</h2>
+                <h3>An Accordion</h3>
                 <p>This is an accordion element. One of the best ways of showing neadly data which may interest your end user. Perfect for using it as FAQ section.</p>
                 {accordionDataMock.map(
                     accord => (

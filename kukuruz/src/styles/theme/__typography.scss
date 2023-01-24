@@ -1,5 +1,5 @@
 @import './_colors.scss';
-@import './_fonts.scss';
+$main-font: 'Montserrat', sans-serif;
 
 @mixin main-heading {
   letter-spacing: -1px;
@@ -42,7 +42,7 @@
 @mixin body-text {
   font-family: $main-font;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 24px;
 }
 

@@ -1,0 +1,85 @@
+<!-- TextInput.stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { TextInput } from '../TextInput';
+
+import '../styles/TextInput.scss';
+
+
+<Meta title="Documentation/TextInput" component={TextInput} />
+
+# TextInput
+
+Can you imagine a form without a `text input`? I didn't think so.
+
+## Variants of TextInputs
+
+Text inputs can have different shape and visuals. Bellow I display some of them.
+
+<Canvas>
+  <Story name="TextInput variants">
+  <div className='inputs-wrapper'>
+        <TextInput type='text' variant='subtle' placeholder="I'm subtle" size='sm' />
+        <TextInput type='text' variant='subtle' placeholder="I'm subtle and focused" size='sm' state='focused' />
+        <TextInput type='text' variant='subtle' placeholder="I'm subtle and disabled" size='sm' state='disabled' />
+        <TextInput type='text' variant='subtle' placeholder="I'm subtle & success" size='sm' state='success' />
+        <TextInput type='text' variant='subtle' placeholder="I'm subtle and error" size='sm' state='error' />
+    </div>
+  </Story>
+</Canvas>
+
+## Types of TextInputs
+
+Based on the type, text input can be obviously text, then number, password or else.
+
+<Canvas>
+  <Story name="Types of text inputs ">
+    <div className='inputs-wrapper'>
+        <TextInput label='Text input' type='text' placeholder="I'm a text input" size='sm' />
+        <TextInput label='Number input' type='number' placeholder="I'm a number input " size='sm' />
+        <TextInput label='Password input' type='password' placeholder="I'm a password input" size='sm' />
+    </div>
+  </Story>
+</Canvas>
+
+## Sizes of TextInputs
+
+TextInputs can come in different sizes as well, depending on where do we need to use the `TextInput` element. 
+
+<Canvas>
+  <Story name="Sizes of text input ">
+       <div className='inputs-wrapper'>
+        <TextInput type='text' placeholder='Small text input ...' size='sm' />
+        <TextInput type='text' placeholder='Small text input ...' size='md' />
+        <TextInput type='text' placeholder='Small text input ...' size='lg' />
+    </div>
+  </Story>
+</Canvas>
+
+## States of TextInputs
+
+Text fields have to change their appearance based on state and user interactions. 
+
+<Canvas>
+  <Story name="States of text inputs ">
+       <div className='inputs-wrapper'>
+        <TextInput type='text' placeholder="Untouched input ..." size='sm' />
+        <TextInput type='text' placeholder="Focused input ..." size='sm' state='focused' />
+        <TextInput type='text' placeholder="Disabled input ..." size='sm' state='disabled' />
+        <TextInput type='text' placeholder="I'm success" size='sm' state='success' />
+        <TextInput type='text' placeholder="Oh no! Error!" size='sm' state='error' />
+    </div>
+  </Story>
+</Canvas>
+
+## Text Input with/without icon
+
+<Canvas>
+  <Story name="Text inputs with/without icon ">
+       <div className='inputs-wrapper'>
+    <TextInput type='text' withIcon placeholder='Input with icon' size='sm' />
+    </div>
+  </Story>
+</Canvas>
+
